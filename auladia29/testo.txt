@@ -1,0 +1,59 @@
+Option Base 1
+
+Sub teste()
+
+Dim M(4, 4) As Single
+Dim A As Single
+Dim B As Single
+Option Base 0
+
+Sub teste()
+
+Dim M(4, 4) As Single
+Dim A As Single
+Dim B As Single
+
+Dim N As Single
+Dim ctd As Single
+
+
+
+
+While ctd <= 3
+
+    N = InputBox(Prompt:="insira um numero maior ou igual a 0, e menor igual a 100:")
+
+    If (N >= 0 And N <= 100) Then
+        
+        
+        
+        For A = 1 To 4
+            For B = 1 To 4
+                M(A, B) = N
+                N = N * 2
+                
+                Cells(A, B) = M(A, B)
+                MsgBox Prompt:="" & M(A, B) & ", "
+                
+                
+            Next B
+        Next A
+        GoTo Fim
+
+
+    Else
+    
+        MsgBox Prompt:="Insira um numero valido."
+        
+        ctd = ctd + 1
+    
+    End If
+    
+    
+
+Wend
+Fim:
+    
+    
+    
+End Sub

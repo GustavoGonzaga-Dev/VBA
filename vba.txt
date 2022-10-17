@@ -1,0 +1,44 @@
+Sub ObterNome()
+'declaração do procedimento sub
+Dim resposta As String
+resposta = InputBox(Prompt:="qual é o seu nome")
+'atribui o valor de retorno a função InputBox
+    If resposta = Empty Then
+        MsgBox Prompt:="você não digitou um nome."
+    Else
+        MsgBox Prompt:="o nome é " & resposta
+    End If
+End Sub
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+Sub MediaEscolar()
+Dim N1 As Double
+Dim N2 As Double
+Dim Media As Double
+
+        N1 = InputBox(Prompt:="insira a primeira nota: ")
+        
+        N2 = InputBox(Prompt:="insira a segunda nota: ")
+        
+        Media = (N1 + N2) / 2
+    
+   
+        If Media >= 6 Then
+            MsgBox Prompt:="você está aprovado, e a sua media é: " & Media
+        Else
+            MsgBox Prompt:="você está reprovado, e a sua media é: " & Media
+        End If
+    
+
+
+
+
+
+End Sub
+-------------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+Option Base 0
+
+Sub ex()
+
+Dim Vet() As Single
+Dim N As Integer
+Dim ctd As Integer
+Dim L As Single
+
+
+While ctd <= 3
+    
+    N = InputBox(Prompt:="insira um valor entre 2 e 5 para o tamanho do vetor: ")
+    
+    If (N < 2 Or N > 5) Then
+        
+        MsgBox Prompt:=" Numero invalido!!!"
+    Else
+        ReDim Vet(N) As Single
+        Dim A As Single
+        For L = 1 To N
+            A = InputBox(Prompt:="insira um valor: ")
+            
+            Vet(N) = A
+            Cells(L) = Vet(N)
+            MsgBox Prompt:="" & Vet(N)
+        Next L
+        GoTo Fim
+    End If
+
+Wend
+Fim:
+    
+End Sub

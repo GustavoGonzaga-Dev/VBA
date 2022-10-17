@@ -1,0 +1,23 @@
+Sub odade()
+
+    Dim Idade As Integer
+    Dim IdadeB As Integer
+    Dim Nome As String
+    Dim NomeB As String
+    
+    Do
+    
+    Nome = InputBox(Prompt:="Insira seu nome: ")
+    Idade = InputBox(Prompt:="Insira a sua idade atual, ou 0 para finalizar: ")
+    
+     If (Idade >= IdadeB) Then
+            IdadeB = Idade
+            NomeB = Nome
+        End If
+
+    Loop While Idade > 0
+
+        
+    MsgBox Prompt:="" & NomeB & ", sua idade é " & IdadeB
+
+End Sub

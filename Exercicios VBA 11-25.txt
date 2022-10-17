@@ -1,0 +1,297 @@
+Sub ex11()
+
+    Dim Raio, Circ As Double
+    Raio = InputBox(Prompt:="Insira o valor do raio de uma circunferência em metros: ")
+    Circ = (2 * 3.14) * Raio
+    MsgBox Prompt:=" o comprimento da circunferência em metros é de: " & Circ
+
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex12()
+
+    Dim AnoA, AnoN, Idade, IdadeB As Integer
+    AnoN = InputBox(Prompt:="Insira o ano do seu nascimento: ")
+    AnoA = InputBox(Prompt:="Insira o ano atual: ")
+
+    Idade = AnoA - AnoN
+    IdadeB = Idade + 17
+    MsgBox Prompt:=" Você tem " & Idade & " anos"
+    MsgBox Prompt:=" Sua idade daqui a 17 anos sera de: " & IdadeB & " anos"
+
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex13()
+
+    Dim Kq, Dias, B As Integer
+    
+    Kg = InputBox(Prompt:=" insira a quantidade de alimentos em quilos: ")
+    
+    B = Kg * 1000
+    
+    Dias = B / 50
+    
+    MsgBox Prompt:="seu alimento ira durar: " & Dias & " dias"
+    
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex14()
+
+    Dim A, Ab, C As Double
+    
+    A = InputBox(Prompt:=" insira o valor do primeiro angulo de um triangulo: ")
+    Ab = InputBox(Prompt:=" insira o valor do segundo angulo de um triangulo: ")
+    
+    C = (A + Ab) - 180
+    
+    MsgBox Prompt:="O valor do terceiro angulo do seu triangulo é de: " & C
+    
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex15()
+
+    Dim Co, Ca, Hp As Double
+    
+    Co = InputBox(Prompt:=" insira o valor do cateto oposto: ")
+    Ca = InputBox(Prompt:=" insira o valor do cateto adjacente: ")
+    
+    Hp = ((Co * Co) + (Ca * Ca)) ^ 0.5
+    
+    MsgBox Prompt:="O valor da hipotenusa é de: " & Hp
+    
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex16()
+
+    Dim Ht, Nd As Integer
+    Dim Vh, Pd, Sb, Des, Sl, Total As Double
+    
+    Ht = InputBox(Prompt:=" Insira a Quantidade de horas trabalhadas: ")
+    Vh = InputBox(Prompt:=" insira o valor por hora em reais: R$")
+    Pd = InputBox(Prompt:=" insira o percentual de desconto: ")
+    Nd = InputBox(Prompt:=" Insira o numero total da quantidade de seus dependentes: ")
+    
+    Sb = Ht * Vh
+    Des = (Pd * Sb) / 100
+    Sl = Sb - Des
+    Total = (Nd * 100) + Sl
+    
+    MsgBox Prompt:=" O seu salario total ja com o desconto e o abono é de: R$" & Total
+
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex17()
+
+    Dim Lt, Vm, T, Km As Double
+    
+    T = InputBox(Prompt:=" Insira o tempo total gasto no percurso: ")
+    Vm = InputBox(Prompt:=" insira a velocidade media: ")
+    
+    Km = Vm * T
+    Lt = Km / 12
+    
+    MsgBox Prompt:=" A quantidade de litros gastoas na sua viagem é de: " & Lt
+
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex18()
+
+    Dim A, B, C As Integer
+    
+    A = InputBox(Prompt:=" Insira o Primeiro valor: ")
+    B = InputBox(Prompt:=" insira o segundo valor: ")
+    
+    If (A > B) Then
+        C = A - B
+        
+        MsgBox Prompt:=" A diferença entre ele é de: " & C
+    Else
+        C = B - A
+        
+        MsgBox Prompt:=" A diferença entre ele é de: " & C
+    End If
+        
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex19()
+
+    Dim A, B As Integer
+    
+    A = InputBox(Prompt:=" Insira o Primeiro valor: ")
+    B = InputBox(Prompt:=" insira o segundo valor: ")
+    
+    If (A > B) Then
+        
+        MsgBox Prompt:=" o maior valor é " & A
+    Else
+        
+        MsgBox Prompt:=" o maior valor é " & B
+    End If
+        
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex20()
+
+    Dim Delta, A, B, C, X1, X2 As Double
+    
+    A = InputBox(Prompt:=" insira o valor de A: ")
+    B = InputBox(Prompt:=" insira o valor de B: ")
+    C = InputBox(Prompt:=" insira o valor de C: ")
+    
+    If (A = 0) Then
+    
+        MsgBox Prompt:=" A não pode ser 0"
+        
+    Else
+        Delta = (((B * B) - 4) * A) * C
+        
+    End If
+    
+    If (Delta > 0) Then
+        X1 = (((Delta ^ 0.5) + -B) / (2 * A))
+        X2 = (((Delta ^ 0.5) - -B) / (2 * A))
+        
+        MsgBox Prompt:="" & X1
+        MsgBox Prompt:="" & X2
+        
+    Else
+    
+        MsgBox Prompt:=" nâo a raizes reais"
+    End If
+           
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex21()
+
+    Dim Na As Double
+    Dim Nb As Double
+    Dim Nc As Double
+    Dim Nd As Double
+    Dim Media As Double
+    
+    
+    Na = InputBox(Prompt:=" insira a primeira nota: ")
+    Nb = InputBox(Prompt:=" insira a segunda nota: ")
+    Nc = InputBox(Prompt:=" insira a terceira nota: ")
+    Nd = InputBox(Prompt:=" insira a quarta nota: ")
+    
+    Media = (((Na + Nb) + Nc) + Nd) / 4
+    
+    If (Media >= 6) Then
+        MsgBox Prompt:=" Aprovado, sua média é: " & Media
+    
+    ElseIf (Media >= 3 And Media < 6) Then
+        MsgBox Prompt:=" Em Exame, sua media é: " & Media
+        
+        ElseIf (Media < 3) Then
+            MsgBox Prompt:=" Retido, sua média é:" & Media
+        End If
+    
+End Sub
+
+---------------------------------------------------------------------------------------
+Sub ex22()
+
+    Dim A, B As Integer
+    
+    A = InputBox(Prompt:=" Insira o primeiro valor inteiro: ")
+    B = InputBox(Prompt:=" Insira o segundo valor inteiro: ")
+    
+    If (A > B) Then
+        MsgBox Prompt:="" & B & ", " & A
+        ElseIf (B > A) Then
+            MsgBox Prompt:="" & A & ", " & B
+            ElseIf (A = B) Then
+                MsgBox Prompt:=" Erro!!! os valores inseridos são iguais."
+    End If
+    
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex23()
+
+    Dim A As Double
+    Dim B As Double
+    Dim C As Double
+    Dim D As Double
+    
+
+    
+    
+    A = InputBox(Prompt:=" insira o primeiro valor : ")
+    B = InputBox(Prompt:=" insira o segundo valor: ")
+    C = InputBox(Prompt:=" insira o terceiro valor: ")
+    D = InputBox(Prompt:=" insira o quarto valor: ")
+    
+    
+    If (D > C) Then
+        MsgBox Prompt:="" & A & ", " & B & ", " & C & ", " & D
+        ElseIf (D > B) Then
+        MsgBox Prompt:="" & A & ", " & B & ", " & D & ", " & C
+            ElseIf (D > A) Then
+            MsgBox Prompt:="" & A & ", " & D & ", " & B & ", " & C
+                ElseIf (D < A) Then
+                MsgBox Prompt:="" & D & ", " & A & ", " & B & ", " & C
+    End If
+    
+End Sub
+---------------------------------------------------------------------------------------
+Sub ex24()
+
+    Dim X As Integer
+    Dim N1 As Integer
+    Dim N2 As Integer
+    
+    X = InputBox(Prompt:=" Insira o valor inteiro: ")
+    N1 = X Mod 2
+    N2 = X Mod 3
+    
+    If (N1 = 0 And N2 = 0) Then
+        MsgBox Prompt:="" & X & " é divisivel por 2 e por 3"
+        
+    ElseIf (N1 = 0 And N2 <> 0) Then
+        MsgBox Prompt:="" & X & " é divisivel somente por 2"
+        
+    ElseIf (N1 <> 0 And N2 = 0) Then
+        MsgBox Prompt:="" & X & " é divisivel somente por 3"
+        
+    ElseIf (N1 <> 0 And N2 <> 0) Then
+        MsgBox Prompt:="" & X & " Não é divisivel por 2 ou por 3"
+        
+    End If
+    
+End Sub
+---------------------------------------------------------------------------------------
+Sub Exercicio25()
+    Dim Hi As Integer
+    Dim Hf As Integer
+    Dim Mi As Integer
+    Dim Mf As Integer
+    Dim Rs As Integer
+    
+    horainicial = InputBox("Hora inicial: ")
+    If horainicial < 0 Or horainicial > 23 Then
+        MsgBox ("Valor invalido: hora não pode ser negativa ou maior que 23")
+        End
+    End If
+    Mi = InputBox("Minuto inicial: ")
+    If Mi < 0 Or Mi > 59 Then
+        MsgBox ("Valor invalido: minuto não pode ser negativo ou maior que 59")
+        End
+    End If
+    Hf = InputBox("Hora final: ")
+    If Hf < 0 Or Hf > 23 Then
+        MsgBox ("Valor invalido: hora não pode ser negativa ou maior que 23")
+        End
+    End If
+    Mf = InputBox("Minuto final: ")
+    If Mf < 0 Or Mf > 59 Then
+        MsgBox ("Valor invalido: minuto não pode ser negativo ou maior que 59")
+        End
+    End If
+    If Hi < Hf Then
+        Rs = (Hf * 60 + Mf) - (Hi * 60 + Mi)
+    Else
+        Rs = 1440 - (Hi * 60 + Mi) + (Hf * 60 + Mf)
+    End If
+    
+    MsgBox ("Tempo passado: " & Format(Int(Rs / 60) & ":" & Rs Mod 60, "Short Time"))
+End Sub

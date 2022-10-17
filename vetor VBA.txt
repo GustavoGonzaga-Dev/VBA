@@ -1,0 +1,36 @@
+Option Base 1
+
+Sub teste()
+Dim notas(4) As Single
+Dim nota As Single
+Dim soma As Single
+Dim media As Single
+Dim i As Integer
+Dim j As Integer
+soma = 0
+j = 0
+For i = 1 To 4
+    nota = InputBox(Prompt:="Informa a " & i & " a nota")
+        If (nota > 10 Or nota < 0) Then
+            MsgBox Prompt:="Insira as notas novamente."
+            i = i - 1
+            GoTo Line1
+        
+        Else
+            soma = soma + nota
+            notas(i) = nota
+        End If
+Line1:
+
+Next i
+
+    media = soma / 4
+    Cells(1, 1) = "Media da Turma: " & media
+    Cells(2, 1) = "Nota a cima da média: "
+    For i = 1 To 4
+        If notas(i) > media Then
+        j = j + 1
+        Cells(2, 2) = notas(i)
+        End If
+    Next i
+End Sub

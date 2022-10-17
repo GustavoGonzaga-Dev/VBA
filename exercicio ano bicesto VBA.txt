@@ -1,0 +1,253 @@
+Sub ex30()
+
+    Dim AnoN As Integer
+    Dim MesN As Integer
+    Dim DiaN As Integer
+    Dim AnoA As Integer
+    Dim MesA As Integer
+    Dim DiaA As Integer
+    Dim Valido As Double
+    Dim Valido2 As Double
+    
+    
+    
+    AnoN = InputBox(Prompt:="Insira o ano do seu nascimento: ")
+    If (AnoN <= 0) Then
+        MsgBox Prompt:="Ano invalido."
+    Else
+        
+    Valido = AnoN Mod 4
+    
+            MesN = InputBox(Prompt:="Insira o Mês do seu nascimento: ")
+        
+            Select Case MesN
+                Case 1
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 2
+                    If (Valido = 0) Then
+        
+                        MsgBox Prompt:="Você nasceu em um ano bicesto"
+                
+                        DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        
+                            If (DiaN <= 0 Or DiaN > 29) Then
+                            MsgBox Prompt:="Dia invalido"
+                            End If
+                    Else
+                        DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        
+                            If (DiaN <= 0 Or DiaN > 28) Then
+                            MsgBox Prompt:="Dia invalido"
+                            End If
+                    End If
+                    
+                Case 3
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 4
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 5
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 6
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 7
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 8
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 9
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 10
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 11
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 12
+                    DiaN = InputBox(Prompt:="Insira o dia do seu nascimento: ")
+                        If (DiaN <= 0 Or DiaN > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case Else
+                    MsgBox Prompt:="Mês invalido"
+                    
+            End Select
+            
+        'Infrmações atuais'
+            
+    AnoA = InputBox(Prompt:="Insira o ano atual: ")
+    
+    If (AnoA <= 0) Then
+        MsgBox Prompt:="Ano invalido."
+        
+    ElseIf (AnoN > AnoA) Then
+    
+    MsgBox Prompt:="isso é impossivel!"
+    
+    Else
+    
+    Valido2 = AnoA Mod 4
+    
+            MesA = InputBox(Prompt:="Insira o Mês atual: ")
+        
+            Select Case MesA
+                Case 1
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 2
+                    If (Valido2 = 0) Then
+        
+                        MsgBox Prompt:="Você está em um ano bicesto"
+                
+                        DiaA = InputBox(Prompt:="Insira o dia Atual: ")
+                        
+                            If (DiaA <= 0 Or DiaA > 29) Then
+                            MsgBox Prompt:="Dia invalido"
+                            End If
+                    Else
+                        DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        
+                            If (DiaA <= 0 Or DiaA > 28) Then
+                            MsgBox Prompt:="Dia invalido"
+                            End If
+                    End If
+                    
+                Case 3
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 4
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 5
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 6
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 7
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 8
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 9
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 10
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 11
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 30) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case 12
+                    DiaA = InputBox(Prompt:="Insira o dia atual: ")
+                        If (DiaA <= 0 Or DiaA > 31) Then
+                            MsgBox Prompt:="Dia invalido"
+                        End If
+                        
+                Case Else
+                    MsgBox Prompt:="Mês invalido"
+                    
+            End Select
+            
+            
+            If (Valido = 0 And MesN = 2 And DiaN = 29 And Valido2 <> 0) Then
+                DiaN = 28
+            End If
+    
+            AnoN = AnoA - AnoN
+    
+            If (MesN < MesA) Then
+    
+            MesN = MesA - MesN
+    
+            Else
+    
+            MesN = MesN - MesA
+            End If
+    
+            If (DiaN < DiaA) Then
+    
+            DiaN = DiaA - DiaN
+    
+            Else
+    
+            DiaN = DiaN - DiaA
+            End If
+    
+            MsgBox Prompt:="Você tem " & AnoN & " anos, " & MesN & " meses, e " & DiaN & " dias"
+                
+            
+         End If
+            
+            
+    End If
+            
+End Sub

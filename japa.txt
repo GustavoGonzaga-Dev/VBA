@@ -1,0 +1,141 @@
+Sub JAPA()
+
+    Dim Num As Integer
+    Dim Aux As Integer
+    Dim Rev As Integer
+    
+    Num = InputBox(Prompt:="Insira um numero natural: ")
+    
+    If (Num > 1 And Num < 10000) Then
+    
+    Aux = Num
+    Rev = 0
+    
+    If (Aux <> 0) Then
+        
+        Do
+        Rev = ((Rev * 10) + (Aux Mod 10))
+        Aux = Aux / 10
+        
+        
+        Loop While Rev < Num
+            If (Rev = Num) Then
+                MsgBox Prompt:="" & Rev & " é um palindromo"
+            Else
+                MsgBox Prompt:="" & Rev & " não é um palindromo"
+            End If
+         
+    End If
+    
+    Else
+     MsgBox Prompt:="Numero invalido"
+    End If
+    
+End Sub
+
+Sub JAPA()
+
+    Dim Num As Integer
+    Dim Aux As Integer
+    Dim Rev As Integer
+    Dim ctd As Integer
+    
+    
+    Num = InputBox(Prompt:="Insira um numero natural: ")
+    
+    If (Num > 1 And Num < 10000) Then
+    
+    Aux = Num
+    Rev = 0
+    
+    If (Aux <> 0) Then
+        
+        Do
+        Rev = ((Rev * 10) + (Aux Mod 10))
+        Aux = Aux / 10
+        
+        ctd = ctd + 1
+        
+        Loop While Num > Rev
+            If (Rev > Num) Then
+                Select Case ctd
+                    Case 1
+                        Rev = Rev - 1
+                    Case 2
+                        Rev = Rev - 11
+                    Case 3
+                        Rev = Rev - 111
+                 End Select
+            End If
+                    
+                
+            If (Rev = Num) Then
+                MsgBox Prompt:="" & Rev & " é um palindromo"
+            Else
+                MsgBox Prompt:="" & Rev & " não é um palindromo"
+            End If
+         
+    End If
+    
+    Else
+     MsgBox Prompt:="Numero invalido"
+    End If
+    
+End Sub
+
+Sub JAPA()
+
+    Dim Num As Single
+    Dim Aux As Single
+    Dim Rev As Single
+    Dim ctd As Integer
+    Dim m As Single
+    
+    
+    
+    Num = InputBox(Prompt:="Insira um numero natural: ")
+    
+    If (Num > 1 And Num < 10000) Then
+    
+    Aux = Num
+    Rev = 0
+    
+    If (Aux <> 0) Then
+        
+        Do
+        Rev = ((Rev * 10) + (Aux Mod 10))
+        Aux = Aux / 10
+        
+        ctd = ctd + 1
+        
+        Loop While Num > Rev
+            If (Rev > Num) Then
+                m = Rev
+                Select Case ctd
+                    Case 1
+                        Rev = Rev - 1
+                    Case 2
+                        Rev = Rev - 1
+                    Case 3
+                        Rev = Rev - 11
+                    Case 4
+                        Rev = Rev - 111
+                 End Select
+                
+            End If
+                    
+                
+            If (Rev = Num) Then
+                MsgBox Prompt:="" & Rev & " é um palindromo"
+            Else
+                MsgBox Prompt:="" & m & " não é um palindromo"
+            End If
+            End If
+            
+         
+    MsgBox Prompt:="" & ctd & " é o numero do contador"
+    Else
+     MsgBox Prompt:="Numero invalido"
+    End If
+    
+End Sub

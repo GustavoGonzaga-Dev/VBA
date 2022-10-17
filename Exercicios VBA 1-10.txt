@@ -1,0 +1,108 @@
+----------------------------------------------------------------------------------------------
+Sub ex1()
+    Dim Lado, Area As Double
+    Lado = InputBox(Prompt:="insira o valor do lado do quadrado que deseja saber a área: ")
+    Area = (Lado * Lado)
+    MsgBox Prompt:="Sua área é: " & Area
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex2()
+    Dim Salar, Reaj, Final As Double
+    Salar = InputBox(Prompt:="insira o valor do seu salario: ")
+    Reaj = (15 * Salar) / 100
+    Final = (Salar + Reaj)
+    MsgBox Prompt:="O reajuste de 15% baseado no seu salario, é de: R$" & Reaj
+    MsgBox Prompt:="Seu salario já com o reajuste é de: R$" & Final
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex3()
+    Dim Base, Altura, Area As Double
+    Base = InputBox(Prompt:="insira o valor da base do seu triangulo: ")
+    Altura = InputBox(Prompt:="insira o valor da altura do seu triangulo: ")
+    Area = (Base * Altura) / 2
+    MsgBox Prompt:="A área do seu triangulo é de: " & Area
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex4()
+    Dim Cel, Fah As Double
+    Cel = InputBox(Prompt:="insira o valor da temperatura em graus Celcios: ")
+    Fah = ((9 * Cel) + 160) / 5
+    MsgBox Prompt:="A temperatura insirida em celcios, convertida para Fahrenheit é de: " & Fah
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex5()
+    Dim A, B, C, Delta, DeltaB, X, Xa, Xx, Xb, Y, Ya As Double
+    A = InputBox(Prompt:="insira o valor de A: ")
+    B = InputBox(Prompt:="insira o valor de B: ")
+    C = InputBox(Prompt:="insira o valor de C: ")
+    
+    Delta = B * B
+    DeltaB = (A * C) * 4
+    Delta = Delta - DeltaB
+    X = Delta ^ 0.5
+    Xa = 2 * A
+    Xx = -B + X
+    Xb = Xx / Xa
+    Y = -B - X
+    Ya = Y / Xa
+    MsgBox Prompt:="" & Xb
+    MsgBox Prompt:="" & Ya
+    
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex6()
+    Dim X, Y, C As Double
+    X = InputBox(Prompt:="insira o valor de X: ")
+    Y = InputBox(Prompt:="insira o valor de Y: ")
+    C = Y
+    Y = X
+    X = C
+    MsgBox Prompt:=" X agora é: " & X
+    MsgBox Prompt:=" Y agora é: " & Y
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex7()
+Dim Cm, Lg, Al, Vl As Double
+Cm = InputBox(Prompt:="Insira o Comprimento de um Paralelepipedo: ")
+Lg = InputBox(Prompt:="Insira a Largura de um Paralelepipedo: ")
+Al = InputBox(Prompt:="Insira a Altura de um Paralelepipedo: ")
+Vl = (Cm * Lg) * Al
+MsgBox Prompt:=" O Volume do seu Paralelepipedo é de: " & Vl
+
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex8()
+Dim Dep, Fin, Reaj As Double
+Dim Mes As Integer
+
+    Dep = InputBox(Prompt:="Insira o valor do Deposito: ")
+    Mes = InputBox(Prompt:="Insira a quantidade de meses que se passaram desde o depósito: ")
+    Reaj = (1.3 * Dep) / 100
+    Reaj = Reaj * Mes
+    Fin = Dep + Reaj
+    MsgBox Prompt:=" O Valor do seu saldo atual é de: R$" & Fin
+
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex9()
+Dim A, B, C As Integer
+
+    A = InputBox(Prompt:="Insira o valor de A: ")
+    B = InputBox(Prompt:="Insira o valor de B: ")
+    A = A * A
+    B = B * B
+    C = A + B
+    MsgBox Prompt:=" O Valor da soma do quadrado de A e B é de: " & C
+
+End Sub
+----------------------------------------------------------------------------------------------
+Sub ex10()
+Dim A, B, C As Double
+
+    A = InputBox(Prompt:="Insira o valor de A: ")
+    B = InputBox(Prompt:="Insira o valor de B: ")
+    C = A - B
+    MsgBox Prompt:=" O Valor da diferença de A e B é de: " & C
+
+End Sub
+---------------------------------------------------------------------------------------------- 

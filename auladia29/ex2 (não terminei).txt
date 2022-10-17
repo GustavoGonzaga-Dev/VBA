@@ -1,0 +1,92 @@
+Option Base 0
+
+Sub ex2()
+
+Dim VetA() As Single
+Dim VetB() As Single
+Dim VetC() As Single
+Dim T1 As Single
+Dim T2 As Single
+Dim T3 As Single
+
+Dim A As Single
+Dim B As Single
+Dim C As Single
+Dim D As Single
+
+
+Dim V1 As Integer
+Dim V2 As Integer
+Dim V3 As Integer
+
+
+Dim ctd As Integer
+Dim Soma As Single
+
+
+
+
+While ctd <= 2
+    
+    T1 = InputBox(Prompt:="insira o valor do tamanho do primeiro vetor: ")
+    T2 = InputBox(Prompt:="insira o valor do tamanho do segundo vetor: ")
+
+    If (T1 > T2) Then
+        ReDim VetA(T1) As Single
+        ReDim VetB(T2) As Single
+        T3 = T1
+        ReDim VetC(T3) As Single
+        
+        For A = 1 To T1
+             V1 = InputBox(Prompt:="insira o valor do primeiro vetor: ")
+             VetA(T1) = V1
+             Cells(A, 1) = VetA(T1)
+        Next A
+        
+        For B = 1 To T2
+             V2 = InputBox(Prompt:="insira o valor do segundo vetor ")
+             VetB(T2) = V2
+             Cells(B, 2) = VetB(T2)
+        Next B
+        
+        
+      
+             VetC(T3) = VetA(T1) + VetB(T2)
+             
+             Cells(3, 3) = VetC(T3)
+   
+        GoTo Fim
+        
+    Else
+        ReDim VetA(T1) As Single
+        ReDim VetB(T2) As Single
+        T3 = T2
+        ReDim VetC(T3) As Single
+        
+        For A = 1 To T1
+             V1 = InputBox(Prompt:="insira o valor do primeiro vetor: ")
+             VetA(T1) = V1
+             Cells(A, 1) = VetA(T1)
+        Next A
+        
+        For B = 1 To T2
+             V2 = InputBox(Prompt:="insira o valor do segundo vetor: ")
+             VetB(T2) = V2
+             Cells(B, 2) = VetB(T2)
+        Next B
+        
+        
+       
+             VetC(T3) = VetA(T1) + VetB(T2)
+             
+             Cells(3, 3) = VetC(T3)
+        
+        
+        
+        GoTo Fim
+    End If
+    ctd = ctd + 1
+Wend
+Fim:
+    
+End Sub

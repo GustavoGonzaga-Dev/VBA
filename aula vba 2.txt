@@ -1,0 +1,25 @@
+Sub inicio()
+    Dim Salario, SalarioB, Desc As Double
+    Dim Nome, Cargo As String
+    
+    Nome = InputBox(Prompt:=" Insira o seu nome: ")
+    Salario = InputBox(Prompt:=" Insira o seu salario: ")
+    Cargo = InputBox(Prompt:=" Insira o seu cargo: ")
+    
+   If (Salario <= 1600) Then
+        Desc = (8 * 1600) / 100
+        SalarioB = Salario + Desc
+        MsgBox Prompt:=" seu salario total é de: R$" & SalarioB
+    ElseIf (Salario >= 1601 And Salario <= 3000) Then
+         Desc = (10 * 3000) / 100
+         SalarioB = Salario + Desc
+         MsgBox Prompt:=" seu salario total é de: R$" & SalarioB
+        ElseIf (Salario >= 3001 And Salario <= 5000) Then
+          Desc = (15 * 5000) / 100
+          SalarioB = Salario + Desc
+          MsgBox Prompt:=" seu salario total é de: R$" & SalarioB
+          ElseIf (Salario > 5000) Then
+            MsgBox Prompt:=" Erro!!! Valor digitado está fora dos padrões pré definidos."
+    End If
+    
+End Sub
